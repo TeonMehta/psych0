@@ -4,13 +4,10 @@ import Navbar from "./components/Navbar";
 
 function App() {
     return (
-        <>
-            <Navbar/>
-            <br/>
-            <Switch>
-            </Switch>
+         <>
+            PSYCH0
         </>
-    );
-}
+             );
+    }
 
 export default App;
