@@ -2,11 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "./styles/main.scss";
-import {BrowserRouter} from "react-router-dom";
+import Apollo from "./Apollo";
 
-ReactDOM.render(
-    <BrowserRouter>
-        <App/>
-    </BrowserRouter>,
-    document.getElementById("root")
-);
+ReactDOM.render(Apollo, document.getElementById("root"));
