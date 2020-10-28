@@ -5,7 +5,11 @@ const { mongoDB } = require("./config");
 const resolvers = require("./src/graphql/resolvers/");
 const typeDefs = require("./src/graphql/typeDefs");
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  context: ({ req }) => ({ req }),
+});
 
 // CONNECTED TO DB AND RUN SERVER
 mongoose
